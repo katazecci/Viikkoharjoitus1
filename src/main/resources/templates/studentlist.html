@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Hello</title>
+    </head>
+    <body>
+        <div>
+            Welcome!
+        </div>
+        <div>
+            List of students:
+            <ul>
+                <li th:each="student : ${students}">
+                    <span th:text="${student.firstName + ' ' + student.lastName}"></span>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

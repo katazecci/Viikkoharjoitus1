@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CarController {
 
-	@RequestMapping("index")
+	@RequestMapping("indeeeex")
 	@ResponseBody
 	public String returnIndexPage() {
 		return "This is the main page";
@@ -20,7 +20,7 @@ public class CarController {
 		return "This is the contact page";
 	}
 
-	@RequestMapping("hello")
+	@RequestMapping("hellouu")
 	@ResponseBody
 	public String sayHelloToSomeone(
 			@RequestParam(name = "name", required = false, defaultValue = "person with no name") String name,
